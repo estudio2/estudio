@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="servicio.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecera">
+
+        <button class="ham_button" id="ham_button">
+            <span class="linea linea_1"></span>
+            <span class="linea linea_2"></span>
+            <span class="linea linea_3"></span>
+        </button>
+
+        <a href="/" class="logo">JKN Cargo</a>
+        <div class="links">
+            <a href="">Menu</a>
+            <a href="">Sobre Nosotros</a>
+            <a href="">Preguntas frecuentes</a>
+            <a href="">Pedir cotizacion</a>
+            <a href="">Contacto</a>
+        </div>
+    </header>
+
+    <nav class="menu menu_estado_inicial" id="menu">
+        <div class="menu_parte_superior menu_items"> <!-- Esta parte del menu la pueden ver todos sin inportar 
+                                        si estan autentificados o el rol -->
+            <a class="enlace" href="/">Menu</a>
+            <a class="enlace" href="/preguntas_frecuentes">Preguntas frecuentes</a>
+            <a class="enlace" href="/cotizacion">Pedir cotizacion</a>
+            <a class="enlace" href="/contacto">  Contacto</a>
+
+        </div> 
+
+        <div class="menu_parte_inferior menu_items">
+
+         <!-- Si no hay un usuario autentificado le doy la opcion de logearse -->
+        <a class="enlace" href="/iniciar_sesion">  Iniciar sesion</a>
+
+
+        </div>
+
+    </nav>
+
+    <main>
+        <article class="info">
+            <div class="imagen">
+                <h2 class="titulo">Transporte Internacional</h2>
+                <img src="img/barco.jpg" alt="">
+            </div>
+            <div class="texto">
+                    <h3>Marítimo</h3>
+                    <p>
+                        Gracias a nuestra red de agentes y al asesoramiento de nuestros agentes de aduana  operamos en todos los puertos del mundo. Garantizamos eficacia y tarifas competitivas. <br>
+                        -Contenedores Exclusivos (FCL) o Consolidados (LCL)<br>
+                        -Granel <br>
+                        -IMO   <br>
+                        etc. <br>
+                    </p>
+                    <h3>TRANSPORTE AÉREO</h3>
+                    <p>
+                        IMPO-EXPO 
+                        Nuestros acuerdo con las compañías aérea nos permiten ofrecer a todos nuestros clientes tarifas competitivas, seguridad de reservas y frecuencia 
+                    </p>
+                    <h3>Transporte Terrestre </h3>
+                    <p>
+                        Llegamos a todos nuestros países limítrofes: Chile, Paraguay, Uruguay, Brasil y Bolivia.<br>
+                        Ofrecemos servicios LTL y FTL  
+                    </p>
+            </div>
+        </article>
+
+        <article class="imagenes">
+            <img src="img/avion.jpg" alt="">
+            <img src="img/camion2.jpg" alt="">
+        </article>
+    </main>
+    
+</body>
+</html>
