@@ -708,11 +708,13 @@ footer .links_footer{
   font-size: 18px;
 }
 
-footer .links_footer span{
+footer .links_footer a{
   margin: 3px;
+  text-decoration: none;
+
 }
 
-footer .links_footer span:hover{
+footer .links_footer a:hover{
   color: var(--color3);
 }
 
