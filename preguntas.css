@@ -218,136 +218,124 @@ html{
 
 
 
-.info{
-    width: 100%;
-    min-height: calc(100vh - 200px);
-    display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 70px;
-}
 
-.info .imagen{
-    margin-right: 50px;
-}
 
-.info .imagen .titulo{
-    text-align: center;
-    font-size: 20px;
-    color: rgb(250, 246, 246);
 
-}
 
-.info .imagen img{
-    width: 500px;
-    height: 300px;
-    margin-top: 30px;
-    border: 10px solid rgb(250, 246, 246);
-}
 
-.info .texto{
-    width: 500px;
-    margin-top: 50px;
-}
 
-.info .texto h3{
-    font-size: 20px;
-    color: rgb(250, 246, 246);
-    margin-bottom: 10px;
-}
 
-.info .texto p{
-    font-size: 17px;
-    color: rgb(250, 246, 246);
-    margin-bottom: 20px;
-}
-
-.imagenes{
+.preguntas{
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 50px;
+    justify-content: center;
+    margin-top: 100px;
 }
 
-.imagenes div{
-    width: 400px;
+.pregunta_seccion{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tarjeta{
+    width: 80%;
     height: 300px;
-    margin: 50px;
-    border: 10px solid rgb(250, 246, 246);
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    margin: 20px 0;
 }
+  
+  
+  .tarjeta .cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #a79a96;
+  }
+  
+  .tarjeta .cara_frontal{
+    padding-top: 50px;
+    transform: perspective(600px) rotateX(0deg);
+    /*box-shadow: 0px 7px 10px var(--color2);*/
 
-.imagenes .imagen1{
-    background-image: url(img/avion.jpg);
-}
+  }
+  
+  .tarjeta .cara_frontal .titulo_preguntas{
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .tarjeta .cara_frontal img{
+    width: 50px;
+    height: 50px;
+    margin: -60px 0 20px 0;
+  }
+  
+  
+  .tarjeta .cara_trasera{
+    padding: 15px;
+    transform: perspective(600px) rotateX(180deg);
+    border: 2px solid var(--color2);
+  }
+  
+  
+  .cara_frontal_girada{
+    transform: perspective(600px) rotateX(180deg) !important;
+    
+  }
+  
+  .cara_trasera_girada{
+    transform: perspective(600px) rotateX(360deg) !important;
+  }
+  
+  
+  
+  .tarjeta .cara .girar{
+    position: absolute;
+    bottom: 10px;
+    color: var(--color3);
+    background-color: rgba(37, 37, 37, 0.705);
+    font-size: 2rem;
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .tarjeta .cara .girar:hover{
+    background-color: rgb(37, 37, 37);
+  }
+  
+  .tarjeta .cara_trasera .info{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
 
-.imagenes .imagen2{
-    background-image: url(img/camion2.jpg);
-}
-
-
-@media (max-width: 1100px){
-
-    .info .imagen img{
-        width: 45vw;
-        height: 30vw;
-        margin-top: 30px;
-        min-width: 300px;
-        min-height: 200px;
-        
+  @media (max-width: 460px){
+    
+    .tarjeta{
+        width: 90%;
+        height: 250px;
     }
 
-    .info .texto{
-        width: 45vw;
-        margin-top: 50px;
-        min-width: 300px;
+  } 
+  
+  @media (max-width: 350px){
+    
+    .tarjeta{
+        height: 250px;
     }
 
-}
-
-@media (max-width: 960px){
-    .cabecera .links{
-        display: none;
-    }
-
-}
-
-@media (max-width: 900px){
-    .info .imagen img{
-        margin-bottom: 100px;
-    }
-}
-
-@media (max-width: 800px){
-    .info{
-        flex-direction: column;
-        align-items: center; 
-        
-    }
-
-    .info .imagen{
-        margin-right: 0;
-    }
-
-    .info .imagen img{
-        margin-right: 0;
-        margin-bottom: 0;
-        width: 90vw;
-        height: 70vw;
-    }
-
-    .info .texto{
-        width: 90vw;
-    }
-
-    .imagenes img{
-        width: 90vw;
-        height: 70vw;
-    }
-}
-
+  } 

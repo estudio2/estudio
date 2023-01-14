@@ -23,6 +23,8 @@ html{
  
 }
 
+
+
 /*
 
     Mensajes
@@ -437,7 +439,7 @@ html{
   }
 
   .servicio_imagen{
-    width: 30vw;
+    width: 40vw;
     min-width: 250px;
     height: 35vw;
     min-height: 250px;
@@ -449,10 +451,12 @@ html{
     flex-wrap: wrap;
     position: relative;
     border-radius: 10px;
-    margin: 0 5px 20px 5px;
+    margin: 40px 5px 20px 5px;
     border: 10px solid var(--color1);
     text-decoration: none;
   }
+
+  
 
   .servicio_imagen .efecto{
     position: absolute;
@@ -478,8 +482,12 @@ html{
   .depositos{
     background-image: url("img/deposito.jpeg");
   }
+  
+  .utilitarios{
+    background-image: url("img/camioneta.jpeg");
+  }
 
-  .servicios .servicio_imagen h3{
+  .servicio_imagen h3{
     font-size: 25px;
     background-color: rgba(43, 109, 196, 0.575);
     color: white;
@@ -487,8 +495,11 @@ html{
     border-radius: 10px;
     text-align: center;
   }
+  .utilitarios h3{
+    background-color: rgb(43, 109, 196);
+  }
 
-  .servicios .servicio_imagen span{
+  .servicio_imagen span{
     font-size: 20px;
     margin-top: 20px;
     position: absolute;
@@ -939,3 +950,4 @@ footer .logo_footer{
         font-size: 8px;
     }
 }
+

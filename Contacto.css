@@ -242,7 +242,7 @@ html{
 
 .info .imagen img{
     width: 500px;
-    height: 300px;
+    height: 400px;
     margin-top: 30px;
     border: 10px solid rgb(250, 246, 246);
 }
@@ -250,19 +250,35 @@ html{
 .info .texto{
     width: 500px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-.info .texto h3{
+.info .texto .contacto{
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center;
+   
+}
+
+.texto .contacto img{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(250, 246, 246);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.texto .contacto span{
+    color: rgb(250, 246, 246);;
     font-size: 20px;
-    color: rgb(250, 246, 246);
-    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
-.info .texto p{
-    font-size: 17px;
-    color: rgb(250, 246, 246);
-    margin-bottom: 20px;
-}
+
 
 .imagenes{
     width: 100%;

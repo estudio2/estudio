@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preguntas.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecera">
+
+        <button class="ham_button" id="ham_button">
+            <span class="linea linea_1"></span>
+            <span class="linea linea_2"></span>
+            <span class="linea linea_3"></span>
+        </button>
+
+        <a href="index.html" class="logo">JKN Cargo</a>
+        <div class="links">
+            <a href="index.html">Menú</a>
+            <a href="SobreNosotros.html">Sobre nosotros</a>
+            <a href="preguntas.html">Preguntas frecuentes</a>
+            <a href="Cotizacion.html">Pedir cotización</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="javascript:history.back()" class="volver"> < </a>
+        </div>
+    </header>
+
+    <nav class="menu menu_estado_inicial" id="menu">
+        <div class="menu_parte_superior menu_items"> <!-- Esta parte del menu la pueden ver todos sin inportar 
+                                        si estan autentificados o el rol -->
+            <a class="enlace" href="index.html">Menú</a>
+            <a class="enlace" href="preguntas.html">Preguntas frecuentes</a>
+            <a class="enlace" href="Cotizacion.html">Pedir cotización</a>
+            <a class="enlace" href="Contacto.html">  Contacto</a>
+
+        </div> 
+
+        <div class="menu_parte_inferior menu_items">
+
+         <!-- Si no hay un usuario autentificado le doy la opcion de logearse -->
+        <a class="enlace" href="/iniciar_sesion">  Iniciar sesión</a>
+
+
+        </div>
+
+    </nav>
+    <main>
+        <article class="preguntas">
+
+            <section class="pregunta_seccion">
+        
+                <div class="tarjeta">
+                    <div class="cara_frontal cara girar">
+                        <img src="img/consulta.svg" alt="">
+                        <h3 class="titulo_preguntas">¿Con ustedes podre seguir el estado de mis cargas?</h3>
+                    </div>
+                    <div class="cara_trasera cara">
+                        <p class="info">Claro que sí. Al convertirte en nuestro cliente te vamos a habilitar una cuenta para que puedas ver cual es el estado de tu carga en todo momento.</p>
+                        <button class="girar">Volver</button>  
+                    </div>
+                </div>
+        
+            </section>
+        
+            <section class="pregunta_seccion">
+        
+                <div class="tarjeta">
+                    <div class="cara_frontal cara girar">
+                        <img src="img/consulta.svg" alt="">
+                        <h3 class="titulo_preguntas">¿Puedo delegar toda la operación logística con ustedes?</h3>
+                    </div>
+                    <div class="cara_trasera cara">
+                        <p class="info"></p>
+                        <button class="girar">Volver</button>  
+                    </div>
+                </div>
+        
+            </section>
+        
+            <section class="pregunta_seccion">
+        
+                <div class="tarjeta">
+                    <div class="cara_frontal cara girar">
+                        <img src="img/consulta.svg" alt="">
+                        <h3 class="titulo_preguntas">¿Pueden asegurar mis cargas?</h3>
+                    </div>
+                    <div class="cara_trasera cara">
+                        <p class="info"></p>
+                        <button class="girar">Volver</button>  
+                    </div>
+                </div>
+        
+            </section>
+        
+        </article>
+        
+        <script src="preguntas.js"></script>
+    
+    </main>
+    
+</body>
+</html>

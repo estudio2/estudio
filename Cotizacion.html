@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="servicioNacional.css">
+    <link rel="stylesheet" href="cotizacion.css">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,35 +50,64 @@
         </div>
 
     </nav>
-
     <main>
-        <article class="info">
-            <div class="imagen">
-                <h2 class="titulo">Transporte Nacional</h2>
-                <img src="img/camioneta.jpeg" alt="">
-            </div>
-            <div class="texto">
-                    
-               <h3>En JKN Cargo contamos con una flota de vehículos propios de distintas dimensiones  que  cumplen con las normas de seguridad y reglamentaciones vigentes. Transportamos todo tipo de carga:</h3> <br>
-               <p>
-                    - Suelta <br>
-                    - Paletizada <br>
-                    - Unitarizada <br>
-                    - Contenedores <br>
-                    - A granel <br>
-                    - IMO <br>
-                    - Refrigeradas <br>
-                    - Frágil <br>
-                    - Voluminosas <br>
-                    - Alimenticias <br>
-               </p>
-            </div>
-        </article>
+        <div class="formulario_cotizacion">
 
-        <article class="imagenes">
-            <div class="imagen1"></div>
-            <div class="imagen2"></div>
-        </article>
+            <h3>Formulario de cotización</h3>
+            
+            <form action="/cotizacion" method="POST">
+        
+                    <label>Mail</label>
+                    <input type="email" name="Mail">
+                    
+              
+        
+                    <label>Nombre</label>
+                    <input type="text" name="Nombre">
+        
+        
+                 <label>Razon social</label>
+                 <input type="text" name="Razon_Social">
+        
+                 <label>Mercaderia</label>
+                 <input type="text" name="Tipo_m">
+        
+                 <label>Imo</label>
+                 <select name="Imo">
+        
+                    <option value="Si">Si</option>
+        
+                    <option value="No">No</option>
+        
+                 </select>
+        
+                 <label>Origen</label>
+                 <input type="text" name="Origen">
+        
+                 <label>Destino</label>
+                 <input type="text" name="Destino">
+        
+                 <label>Peso</label>
+                 <input type="text" name="Peso">
+                 
+                 <label>Metros cubicos</label>
+                 <input type="text" name="Metros">
+        
+                 <label>Contenedor</label>
+                 <select name="Contenedor">
+        
+                    <option value="Si">Si</option>
+        
+                    <option value="No">No</option>
+        
+                 </select>
+        
+                <button type="submit">Enviar</button>
+        
+            </form>
+        
+        </div>
+    
     </main>
     
 </body>
